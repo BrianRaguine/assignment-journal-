@@ -3,7 +3,7 @@ import React from 'react'
 import { Component } from "react";
 import { Form, Button, ListGroup } from "react-bootstrap";
 
-class TodoList extends Component{
+class MyApp extends Component{
     constructor() {
         super();
         this.state = {
@@ -41,7 +41,7 @@ class TodoList extends Component{
         return(
             <>
             
-            <h1>Task of the Day</h1>
+            <h1>Thoughts of the Day</h1>
     
             <Form onSubmit={this.addTodo}  md={{ span: 20, offset: 1}}>
                 <Form.Group controlId="formBasicTaskTitle">
@@ -81,4 +81,4 @@ class TodoList extends Component{
     }
 }
 
-export default TodoList;
+export default MyApp;
